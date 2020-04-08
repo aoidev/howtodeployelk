@@ -1,6 +1,6 @@
 ---
 kind: Deployment
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 metadata:
   labels:
     app: kibana
@@ -19,13 +19,13 @@ spec:
     spec:
       containers:
         - name: kibana
-          image: dockerhub-pr.yeshj.com/ops/kibana:7.2.0
+          image: kibana:7.2.0
           ports:
             - containerPort: 5601
               protocol: TCP
           env:
             - name: "ELASTICSEARCH_URL"
-              value: "http://elasticsearch-service:9200"
+              value: "http://elasticsearch-master:9200"
       imagePullSecrets:
       - name: regcred-elastic
       tolerations:

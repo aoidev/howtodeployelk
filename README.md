@@ -64,3 +64,4 @@ kubectl apply -f logstash-named-k8s.yml
 - [通过环境变量将Pod信息呈现给容器](https://kubernetes.io/zh/docs/tasks/inject-data-application/environment-variable-expose-pod-information/)
 - [Master not discovered yet, this node has not previously joined a bootstrapped (v7+) cluster](https://discuss.elastic.co/t/master-not-discovered-yet-this-node-has-not-previously-joined-a-bootstrapped-v7-cluster/176304)
 - [elasticsearch-kubed](https://github.com/jswidler/elasticsearch-kubed)
+# howtodeployelk
